@@ -62,7 +62,11 @@ return {
         chunk = {
           enable = true,
           notify = true,
+<<<<<<< HEAD
           support_filetypes = {"*.js","*.ts","*.php",",lua", "html", "css", "javascript", "php", "blade"},
+=======
+          support_filetypes = {"*.js","*.ts","*.php","*.lua"},
+>>>>>>> e940720 (NEW UPDATES: REFACTOR THE CODE)
           use_treesitter = true,
           style = {
             {fg = "#98c379"}

@@ -6,7 +6,11 @@
 local M = {}
 
 M.base46 = {
+<<<<<<< HEAD
 	theme = "onedark-darker",
+=======
+	theme = "onedark",
+>>>>>>> e940720 (NEW UPDATES: REFACTOR THE CODE)
   transparency = true,
 }
 

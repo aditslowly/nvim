@@ -1,0 +1,19 @@
+{
+  "Bootstrap Container": {
+    "prefix": "bs-container",
+    "body": [
+      "<div class=\"container\">",
+      "\t$0",
+      "</div>"
+    ],
+    "description": "Bootstrap Container"
+  },
+  "Bootstrap Button": {
+    "prefix": "bs-btn",
+    "body": [
+      "<button class=\"btn btn-primary\">$1</button>"
+    ],
+    "description": "Bootstrap Primary Button"
+  }
+}
+

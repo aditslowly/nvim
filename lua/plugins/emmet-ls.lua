@@ -7,13 +7,10 @@ return {
           filetypes = {
             "html",
             "css",
-            "scss",
-            "javascript",
             "typescript",
+            "javascript",
+            "scss",
             "blade",
-            "php",
-            "typescriptreact",
-            "javascriptreact",
           },
           init_options = {
             html = {

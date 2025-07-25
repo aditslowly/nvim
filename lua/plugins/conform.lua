@@ -4,13 +4,13 @@ return {
     optional = false,
     opts = {
       formatters_by_ft = {
-        php = { { "php-cs-fixer", "pint" } },
         html = { "prettier" },
         css = { "prettier" },
         scss = { "prettier" },
         javascript = { "prettier" },
         typescript = { "prettier" },
         blade = { "prettier" },
+        php = { "php-cs-fixer" },
       },
     },
   },

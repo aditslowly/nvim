@@ -1,16 +1,19 @@
 return {
-  "Everblush/nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("everblush").setup({
-      override = {},
-      transparent_background = false,
-      nvim_tree = {
-        contrast = false,
-      },
-    })
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "mocha",
+        transparent_background = true,
+        show_end_of_buffer = false,
+        term_colors = false,
+        no_italic = false,
+      })
 
-    vim.cmd.colorscheme("everblush")
-  end,
+      vim.cmd.colorscheme("catppuccin")
+    end,
+  },
 }

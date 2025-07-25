@@ -44,6 +44,9 @@ keymap.set("n", "<leader>/", function()
   require("Comment.api").toggle.linewise.current()
 end)
 
+-- NvimTree
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
   vim.diagnostics.goto_next()

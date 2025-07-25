@@ -5,21 +5,26 @@ return {
   },
 
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        intelephense = {
-          filetypes = { "php", "blade" },
-          settings = {
-            intelephense = {
-              files = {
-                associations = { "*.php", "*.blade.php" },
-              },
-            },
-          },
-        },
-      },
+    "adibhanna/laravel.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      "nvim-telescope/telescope.nvim",
     },
+    ft = "php",
+    config = function()
+      require("laravel").setup({
+        route_info = {
+          enabled = true,
+        },
+        commands = {
+          enabled = true,
+        },
+        telescope = {
+          enabled = true,
+        },
+      })
+    end,
   },
 
   {
